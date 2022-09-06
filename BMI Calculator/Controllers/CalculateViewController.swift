@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CalculateViewController: UIViewController {
 
     @IBOutlet weak var heightLabel: UILabel!
     @IBOutlet weak var weightLabel: UILabel!
@@ -41,13 +41,14 @@ class ViewController: UIViewController {
         // Calculate BMI
         let bmi = weight / pow(height, 2)
         
-        // Create secondView object
-        let secondVC = SecondViewController()
-        // Assign bmiValue the value we calculated
-        secondVC.bmiValue = String(format: "%.1f", bmi)
-        
-        // Change to the second view activity
-        self.present(secondVC, animated: true, completion: nil)
+        self.performSegue(withIdentifier: "goToResults", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToResults" {
+            let destinationVC = segue.destination as! ResultViewController
+            destinationVC.bmiValue = "0.0"
+        }
     }
     
 }

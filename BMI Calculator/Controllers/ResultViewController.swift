@@ -17,7 +17,8 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        bmiLabel.text = bmiValue
         
     }
     

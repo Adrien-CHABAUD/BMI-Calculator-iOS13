@@ -34,12 +34,20 @@ class ViewController: UIViewController {
     }
     
     @IBAction func calculatePressed(_ sender: UIButton) {
+        // Get height and weight values
         let height = heightSlider.value
         let weight = weightSlider.value
         
+        // Calculate BMI
         let bmi = weight / pow(height, 2)
         
-        print(bmi)
+        // Create secondView object
+        let secondVC = SecondViewController()
+        // Assign bmiValue the value we calculated
+        secondVC.bmiValue = String(format: "%.1f", bmi)
+        
+        // Change to the second view activity
+        self.present(secondVC, animated: true, completion: nil)
     }
     
 }

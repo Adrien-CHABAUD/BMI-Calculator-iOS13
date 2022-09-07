@@ -23,7 +23,7 @@ class ResultViewController: UIViewController {
         
         bmiLabel.text = bmiValue
         adviceLabel.text = advice
-        background.backgroundColor = color
+        view.backgroundColor = color
         
         
     }

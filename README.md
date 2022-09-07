@@ -25,9 +25,10 @@ The goal here was to learn about Optionals, solidify the understanding of the MV
 
 This app is a Body Mass Index Calculator, based on the user's weight and height it will calculate their body mass and give a piece of health advice depending on whether if they have eaten too many pies or if they need to eat more pies.
 
-## <p align="center">
-##  <img src="/images/screenshot_main_activity.png" width=300 hspace=20><img src="/images/main_activity.gif" width=300 hspace=20>
-## </p>
+<p align="center">
+  <img src="/images/screenshot_main_activity.png" width=300 hspace=20><img src="/images/functioning_app.gif" width=300 hspace=20> </br>
+  <img src="/images/screenshot_red_activity.png" width=300 hspace=10><img src="/images/screenshot_blue_activity.png" width=300 hspace=10><img src="/images/screenshot_green_activity.png" width=300 hspace=10>
+</p>
 
 
 ## Learning Tool
